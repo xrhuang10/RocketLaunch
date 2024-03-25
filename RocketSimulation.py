@@ -123,8 +123,8 @@ timeInput = input("Please enter a time with 3 decimals between 0.000 seconds and
 index = int(float(timeInput) * 1000)
 
 print(f"At {index/1000} seconds, the rocket weighed {round(arrayMasses[index],3)} kg and was {round(arrayPositions[index],3)} m high, going at {round(arrayVelocities[index],3)} m/s with an acceleration of {round(arrayAccelerations[index],3)} m/s^2. \n")
-print("It produced " + str(round(arrayThrustForces[index],3)) + " Newtons of thrust force, with an exhaust (water) speed of " + str(round(arrayExhaustSpeeds[index],3)) + " m/s and a flow rate of " + str(round(arrayFlowRates[index],3))+ " m^3/s. \n")
-print(f"As for the waterbottle, there was {round(arrayWaterVolumes[index],3)} L of water left, with {round(arrayBottlePressures[index],3)} Pa of pressure inside.")
+print("It produced " + str(round(arrayThrustForces[index],3)) + " Newtons of thrust force, with an exhaust (water) speed of " + str(round(arrayExhaustSpeeds[index],3)) + " m/s and a flow rate of " + str(round(arrayFlowRates[index],8))+ " m^3/s. \n")
+print(f"As for the waterbottle, there was {round(100000*arrayWaterVolumes[index],8)} mL of water left, with {round(arrayBottlePressures[index],3)} Pa of pressure inside.")
 
 
     
